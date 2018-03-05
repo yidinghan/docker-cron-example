@@ -37,3 +37,19 @@ crond[9]: child running /bin/sh
 crond[8]: USER root pid   9 cmd echo "test" > /dev/stdout
 test
 ```
+
+## Build Your Own
+
+See example dockerfile below
+
+- [delete-outdated-es-indexes](https://github.com/yidinghan/delete-outdated-es-indexes)
+
+```dockerfile
+FROM playdingnow/docker-cron-example:1.0
+
+RUN apk add --no-cache curl
+
+ENV cronjob='10 * * * */1 sh /delete-old-indexes.sh >> /dev/stdout'
+ADD delete-old-indexes.sh /
+RUN chmod -x delete-old-indexes.sh
+```
