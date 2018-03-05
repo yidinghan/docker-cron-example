@@ -3,4 +3,4 @@ LABEL maintainer="playdingnow@gmail.com"
 
 ADD entrypoint.sh /
 
-ENTRYPOINT ["sh", "/entrypoint.sh"]
+CMD ["sh", "/entrypoint.sh"]
