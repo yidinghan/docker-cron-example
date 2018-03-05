@@ -1,5 +1,3 @@
-#!/bin/sh
-
 cronjob=${cronjob:-'*/1 * * * * echo "test"'}
 
 echo $cronjob > /tmp/cronjob
