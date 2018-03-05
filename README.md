@@ -1,5 +1,9 @@
 # docker-cron-example
 
+[![Docker Automated buil](https://img.shields.io/docker/automated/playdingnow/docker-cron-example.svg?style=flat-square)](https://hub.docker.com/r/playdingnow/docker-cron-example/)
+[![Docker Build Statu](https://img.shields.io/docker/build/playdingnow/docker-cron-example.svg?style=flat-square)](https://hub.docker.com/r/playdingnow/docker-cron-example/builds/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/playdingnow/docker-cron-example.svg?style=flat-square)](https://hub.docker.com/r/playdingnow/docker-cron-example)
+
 ```shell
 >> docker run --rm -it playdingnow/docker-cron-example
 your job is */1 * * * * echo $(date) > /dev/stdout
